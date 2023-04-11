@@ -1,0 +1,117 @@
+@charset 'uft-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    /* max-width: 1920px; */
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 76px, rgba(255,0,0,1) 76px, rgba(255,0,0,1) 90px, rgba(255,255,255,1) 90px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    overflow: hidden;
+    z-index: 100;
+}
+header .inner {
+    max-width: 1520px;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header .inner .logo {
+    margin-top: 20px;
+    width: 25%;
+}
+header .inner .logo .pc_logo {
+    width: 220px;
+}
+header .inner .logo .mb_logo {
+    width: 130px;
+    margin-left: 20px;
+    display: none;
+}
+nav {    
+    width: 70%;
+    position: relative;
+}
+nav .main_menu {
+    width: 100%;
+}
+nav .main_menu .item {
+    float: left;
+    /* text-align: center; */
+    padding-top: 30px;
+    line-height: 30px;
+    width: 15%;
+}
+.item > div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:85%;
+    display: none;
+    padding-top:50px;
+    padding-bottom: 20px;
+    
+}
+.item .sustain_menu {   
+    left: 30%;
+}
+.item .brand_menu  {   
+    left: 45%;
+}
+.item .products_menu > ul> li {
+    display: block;
+    width: 200px;
+}
+.item .products_menu:nth-child(2) > ul> li {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+.gnb_btn {
+    width: 5%;
+    text-align: right;
+    margin-top: 40px;
+}
+.gnb_btn img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.gnb_btn img:first-child {
+    float: left;
+}
+
+.main {
+    width: 100%;
+    height: 1000px;
+}
